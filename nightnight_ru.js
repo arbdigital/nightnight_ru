@@ -21,12 +21,12 @@ window.nightnightHide = function() {
 	var e = eh * 60 + em;
 
 	if (b < e) {
-		console.log("ВНИМАНИЕ: NightNight: неверный интервал времени: указанное время сна раньше времени пробуждения");
+		console.log("WARNING: NightNight: invalid time interval: sleep time is earlier in the day than wakeup time");
 		return
 	}
 
 	if (m >= b || m <= e) {
-		console.log('NightNight запущен')
+		console.log('NightNight activated')
 
 		// Inject CSS
 		var css = '.nightnight {background: #000; font-family: Arial, sans-serif; color: #fff; font-size: 12px; padding: 10%; position: fixed; margin: 0; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; } .nightnight-skip a {padding: 10px 0; } .nightnight a:link {color: #555; } .nightnight a:visited {color: #555; } .nightnight a:hover {color: #FFF; } .nightnight-timing {font-size: 15px; font-weight: 900; margin-top: 20px; } .nightnight-skip {font-style: italic; font-size: 14px; margin-top: 40px; } .nightnight-credits {position: fixed; bottom: 20px; right: 20px; margin-top: 40px; font-size:9px; }';

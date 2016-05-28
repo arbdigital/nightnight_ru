@@ -9,3 +9,5 @@ More information on [Github](https://github.com/nww/nightnight).
 ## Translation.
 
 All the text visible to visitors translated to Russian and so are console log errors.
+
+__Update__. Changed console logs to English since that is a better practice in general.
